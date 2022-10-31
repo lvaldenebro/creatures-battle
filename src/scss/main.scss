@@ -1,8 +1,28 @@
 // @import 'core/variables';
-// @import "core/reset";
+@import "core/reset";
 // @import 'components/code';
 // @import 'components/links';
 // @import 'layout/page';
 // @import 'layout/header';
 // @import 'layout/footer';
 // @import 'pages/index';
+
+.main {
+    background-color: whitesmoke;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    &_title{
+    font-size: 45px;
+    margin-bottom: 15px;
+    }
+    &_form{
+    margin-top: 30px;
+    }
+}
+.text {
+    font-size: 20px;
+}
