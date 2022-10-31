@@ -19,10 +19,17 @@
     font-size: 45px;
     margin-bottom: 15px;
     }
+    &_div{
+    display: flex;
+    gap: 30px;  
+    }
     &_form{
     margin-top: 30px;
     }
 }
 .text {
     font-size: 20px;
+}
+.hidden {
+    display: none;
 }
