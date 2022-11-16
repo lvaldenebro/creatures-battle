@@ -1,8 +1,8 @@
-# Los anillos del poder
+# Power of the rings
 
 Intermediate exercise of module 2 Adalab
 
-# Tecnologías
+# Technologies used
 
 AWST, HTML, SASS, JS
 

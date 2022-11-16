@@ -8,7 +8,7 @@ const machineContainer = document.querySelector('.js-machine-container');
 const resetButton = document.querySelector('.js-reset-button');
 
 let userPlayPoints;
-let machinePlayPoints;
+let machinePlayPoints = computerPlayPoints();
 let userCount = 0;
 let machineCount = 0;
 let clickCount = 0;
@@ -68,6 +68,21 @@ function compareRoundWinner() {
 	}
 }
 
+function computerPlayPoints() {
+	const computerPlayPoints = getRandomNumber(5);
+
+	let result = 0;
+	if (computerPlayPoints === 1 || computerPlayPoints === 2 || computerPlayPoints === 3) {
+		result = 2;
+	} else if (computerPlayPoints === 4) {
+		result = 3;
+	} else {
+		result = 5;
+	}
+	return result;
+}
+
+
 function getRandomNumber(max) {
 	return Math.ceil(Math.random() * max);
 }
@@ -88,12 +103,15 @@ function userPlay(input) {
 }
 
 function handleClick(event) {
-  event.preventDefault();
-	clickCount += 1;
-	userPlayPoints = userPlay(userSelect.value);
-	machinePlayPoints = getRandomNumber(6);
-	compareRoundWinner();
-	endGame();
+  	event.preventDefault();
+  	if (userSelect.value !== 'default') {
+		clickCount += 1;                                    
+		userPlayPoints = userPlay(userSelect.value);
+		// machinePlayPoints = getRandomNumber(6);
+		compareRoundWinner();
+		endGame();
+	}
+
 } 
 //events
 button.addEventListener('click', handleClick);
