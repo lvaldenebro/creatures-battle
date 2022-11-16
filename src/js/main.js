@@ -14,7 +14,7 @@ let machineCount = 0;
 let clickCount = 0;
 
 //General code, not related with the event
-winnerText.innerHTML = "Comienza la batalla";
+winnerText.innerHTML = 'Comienza la batalla';
 
 //functions
 
@@ -22,21 +22,21 @@ function handleReset() {
 	userCount = 0;
 	machineCount = 0;
 	printGlobalResult();
-	winnerText.innerHTML = "";
+	winnerText.innerHTML = '';
 	alternateGame();
 }
 
 function alternateGame() {
-	resetButton.classList.toggle("hidden");
-	button.classList.toggle("hidden");
+	resetButton.classList.toggle('hidden');
+	button.classList.toggle('hidden');
 }
 
 function compareFinalWinner() {
 	if (userCount > machineCount) {
-		winnerText.innerHTML = "¡Ha ganado el Ejército del Bien!";
+		winnerText.innerHTML = '¡Ha ganado el Ejército del Bien!';
 		alternateGame();
 	} else {
-		winnerText.innerHTML = "¡Ha ganado el Ejército del Mal!";
+		winnerText.innerHTML = '¡Ha ganado el Ejército del Mal!';
 		alternateGame();
 	}
 }
@@ -54,17 +54,17 @@ function printGlobalResult() {
 
 function compareRoundWinner() {
 	if (userPlayPoints === machinePlayPoints) {
-		winnerText.innerHTML = "Empate.";
+		winnerText.innerHTML = 'Empate.';
 	}
 	else if (userPlayPoints > machinePlayPoints){
 		userCount += 1;
 		printGlobalResult();
-		winnerText.innerHTML = "Ha ganado el Ejército del Bien! Enhorabuena.";
+		winnerText.innerHTML = 'Ha ganado el Ejército del Bien! Enhorabuena.';
 	}
 	else {
 		machineCount += 1;
 		printGlobalResult();
-		winnerText.innerHTML = "Ha ganado el Ejército del Mal! Vuelve a intentarlo.";
+		winnerText.innerHTML = 'Ha ganado el Ejército del Mal! Vuelve a intentarlo.';
 	}
 }
 
