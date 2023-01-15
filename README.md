@@ -1,13 +1,29 @@
-# Power of the rings
+# Rings of Power
 
-Intermediate exercise of module 2 Adalab
+Dynamic web site that simulates a battle between the army of the Goods and of the Bads, based in Rings of Power.
 
-# Technologies used
+This is a intermediate exercise of the second of Adalab.
 
-AWST, HTML, SASS, JS
+## Technologies used
 
-### How to play
+HTML, SASS, Vanilla JS and Adalab Web Starter Kit.
 
-The user can choose a criature to play. It depends on the strenght, it will fight with the machine for the control over the Middle Earth.
+## Installation
+
+Clone the repository and run `npm install` to create the `node_modules` folder. Use it locally with `npm start`.
+
+## How to play
+
+The user can choose a creature to play. It depends on the strength, it will fight with a random army generated for the machine for the control over the Middle Earth.
+
+There are 10 rounds, the side with the highest score after that, wins and the game restarts.
 
 Good luck!
+
+## Demo
+
+You can see the result at [GitHub Pages](https://lvaldenebro.github.io/creatures-battle/).
+
+## License
+
+All this code is released into the public domain.
