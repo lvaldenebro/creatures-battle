@@ -71,6 +71,7 @@ function compareRoundWinner() {
 function computerPlayPoints() {
 	const computerPlayPoints = getRandomNumber(5);
 
+	//strength
 	let result = 0;
 	if (computerPlayPoints === 1 || computerPlayPoints === 2 || computerPlayPoints === 3) {
 		result = 2;
@@ -107,7 +108,7 @@ function handleClick(event) {
   	if (userSelect.value !== 'default') {
 		clickCount += 1;                                    
 		userPlayPoints = userPlay(userSelect.value);
-		// machinePlayPoints = getRandomNumber(6);
+		machinePlayPoints = computerPlayPoints();
 		compareRoundWinner();
 		endGame();
 	}
