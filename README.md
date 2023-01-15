@@ -12,6 +12,8 @@ HTML, SASS, Vanilla JS and Adalab Web Starter Kit.
 
 Clone the repository and run `npm install` to create the `node_modules` folder. Use it locally with `npm start`.
 
+If you want to deploy the code into GitHub Pages, once the code is done and pushed run `npm run docs` and add, commit and push the updated docs folder.
+
 ## How to play
 
 The user can choose a creature to play. It depends on the strength, it will fight with a random army generated for the machine for the control over the Middle Earth.
